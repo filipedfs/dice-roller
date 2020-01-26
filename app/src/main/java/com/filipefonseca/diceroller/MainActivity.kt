@@ -14,11 +14,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Initializes the image view, calling findViewById only once
-        diceImage = findViewById(R.id.dice_image)
-
         // Specifies which layout is associate with the activity
         setContentView(R.layout.activity_main)
+
+        // Initializes the image view, calling findViewById only once
+        diceImage = findViewById(R.id.dice_image)
 
         // Get the button
         val rollButton: Button = findViewById(R.id.roll_button)
